@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "title": "lucasta",
+    "subtitle": "Tarot & intuitive guidance",
+    "tagline": "Lắng nghe trực giác, tìm rõ hướng đi"
+  },
+  "hero": {
+    "title": "Không gian tarot dịu dàng và rõ ràng",
+    "description": "Một nơi để bạn dừng lại, nhìn sâu hơn vào cảm xúc, lựa chọn và hành trình của mình.",
+    "primaryCtaLabel": "Đặt lịch",
+    "secondaryCtaLabel": "Xem dịch vụ"
+  },
+  "floating_actions": {
+    "enabled": true,
+    "position": "right",
+    "items": [
+      {
+        "type": "zalo",
+        "label": "Zalo",
+        "href": "https://zalo.me/",
+        "enabled": true
+      },
+      {
+        "type": "messenger",
+        "label": "Messenger",
+        "href": "https://m.me/",
+        "enabled": true
+      },
+      {
+        "type": "booking",
+        "label": "Đặt lịch",
+        "target": "#booking",
+        "enabled": true
+      }
+    ]
+  },
+  "services": {
+    "title": "Chọn trải bài của bạn",
+    "subtitle": "Khám phá thông điệp dành riêng cho bạn",
+    "badge": "Dịch vụ"
+  },
+  "prices": {
+    "title": "Bảng giá",
+    "subtitle": "Khám phá thông điệp dành riêng cho bạn",
+    "prices": {
+
+    }
+  },
+  "about": {
+    "title": "Về mình",
+    "description": ""
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp"
+  },
+  "booking": {
+    "title": "Đặt lịch",
+    "description": "Điền thông tin để mình liên hệ xác nhận lịch.",
+    "buttonLabel": "Gửi lịch hẹn"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "email": ""
+  },
+  "ui": {
+    "showAbout": true,
+    "showFaq": true,
+    "showContact": true
+  },
+  "layout": {
+    "sections": ["hero", "services", "about", "faq", "booking", "contact"]
+  }
+}

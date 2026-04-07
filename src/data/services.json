@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "name": "Bài Tuần",
+      "short_description": "Thông điệp và năng lượng nổi bật trong tuần này.",
+      "description": "",
+      "image": "/images/service-week.jpg"
+    },
+    {
+      "name": "Bài Tháng",
+      "short_description": "Góc nhìn tổng quan về hành trình và cơ hội trong tháng.",
+      "description": "",
+      "image": "/images/service-month.jpg"
+    },
+    {
+      "name": "Bài trà",
+      "short_description": "Trải bài nhẹ nhàng, thư giãn, phù hợp khi cần định hướng nhanh.",
+      "description": "",
+      "image": "/images/service-tea.jpg"
+    }
+  ]
+}

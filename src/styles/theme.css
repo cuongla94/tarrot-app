@@ -3,24 +3,25 @@
   --surface: #fffdf9;
   --card: #ffffff;
   --text: #2f2238;
-  --muted: #7d6d88;
+  --muted: #7f718b;
 
-  --primary: #7c5cff;
-  --primary-soft: #efe9ff;
-  --accent: #e7b65c;
-  --accent-soft: #fff4db;
+  --primary: #2f2238;
+  --primary-soft: #f2edf6;
+  --accent: #caa46a;
+  --accent-soft: #f8efdf;
 
-  --border: #eadff0;
+  --border: #e9e0ec;
   --success: #2f9e6f;
   --danger: #d95c5c;
 
-  --heading: #24182d;
-  --shadow-card: 0 10px 30px rgba(75, 45, 115, 0.08);
-  --shadow-soft: 0 6px 18px rgba(75, 45, 115, 0.05);
+  --heading: #2b1d35;
 
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
+
+  --shadow-card: 0 10px 30px rgba(47, 34, 56, 0.06);
+  --shadow-soft: 0 6px 16px rgba(47, 34, 56, 0.05);
 
   --font-body:
     "Inter",
