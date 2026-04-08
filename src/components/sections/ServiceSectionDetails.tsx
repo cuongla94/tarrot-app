@@ -85,22 +85,22 @@ export default function ServiceSectionDetails({
           <div className="pointer-events-none absolute inset-0">
             {isTarot ? (
               <>
-                <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/20 to-transparent" />
-                <div className="absolute -top-10 left-[-10%] h-64 w-64 rounded-full bg-[#6e3fd4]/20 blur-3xl" />
-                <div className="absolute right-[-8%] top-24 h-72 w-72 rounded-full bg-[#c48a3c]/12 blur-3xl" />
-                <div className="absolute bottom-20 left-[15%] h-56 w-56 rounded-full bg-[#7b46ff]/10 blur-3xl" />
+                <div className="absolute inset-x-0 top-0 h-36 bg-linear-to-b from-black/20 to-transparent" />
+                <div className="absolute -top-10 left-[-10%] h-64 w-64 rounded-full bg-[#6e3fd4]/20 blur-2xl" />
+                <div className="absolute right-[-8%] top-24 h-72 w-72 rounded-full bg-[#c48a3c]/12 blur-2xl" />
+                <div className="absolute bottom-20 left-[15%] h-56 w-56 rounded-full bg-[#7b46ff]/10 blur-2xl" />
               </>
             ) : isLenormand ? (
               <>
-                <div className="absolute -top-16 left-[-12%] h-60 w-60 rounded-full bg-[#cfd8ee]/50 blur-3xl" />
-                <div className="absolute right-[-10%] top-20 h-72 w-72 rounded-full bg-[#f3f6ff]/70 blur-3xl" />
-                <div className="absolute bottom-10 left-[10%] h-56 w-56 rounded-full bg-[#d9d2e9]/35 blur-3xl" />
+                <div className="absolute -top-16 left-[-12%] h-60 w-60 rounded-full bg-[#cfd8ee]/50 blur-2xl" />
+                <div className="absolute right-[-10%] top-20 h-72 w-72 rounded-full bg-[#f3f6ff]/70 blur-2xl" />
+                <div className="absolute bottom-10 left-[10%] h-56 w-56 rounded-full bg-[#d9d2e9]/35 blur-2xl" />
               </>
             ) : (
               <>
-                <div className="absolute -top-16 left-[-20%] h-56 w-56 rounded-full bg-[#d7c2ff]/35 blur-3xl" />
-                <div className="absolute right-[-10%] top-32 h-64 w-64 rounded-full bg-[#f3d6b3]/25 blur-3xl" />
-                <div className="absolute bottom-10 left-[-10%] h-52 w-52 rounded-full bg-[#c7b3ff]/20 blur-3xl" />
+                <div className="absolute -top-16 left-[-20%] h-56 w-56 rounded-full bg-[#d7c2ff]/35 blur-2xl" />
+                <div className="absolute right-[-10%] top-32 h-64 w-64 rounded-full bg-[#f3d6b3]/25 blur-2xl" />
+                <div className="absolute bottom-10 left-[-10%] h-52 w-52 rounded-full bg-[#c7b3ff]/20 blur-2xl" />
               </>
             )}
           </div>
