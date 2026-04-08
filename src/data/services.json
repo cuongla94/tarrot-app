@@ -3,16 +3,16 @@
     {
       "id": "bai-tarot",
       "name": "Bài Tarot",
-      "tagline": "Phù hợp khi bạn cần nhìn sâu vào một vấn đề cụ thể.",
-      "short_description": "Khi bạn cần đi sâu vào một vấn đề và tìm ra hướng nhìn rõ ràng hơn.",
-      "description": "Bài Tarot phù hợp khi bạn đang có một vấn đề, một khúc mắc hoặc một lựa chọn cần được nhìn sâu hơn. Trải bài này không chỉ dừng ở việc xem điều gì đang diễn ra, mà còn giúp bạn hiểu rõ nguyên nhân, các khía cạnh liên quan và hướng đi phù hợp hơn với mình.\n\nPhù hợp cho những câu hỏi về công việc, tình cảm, các mối quan hệ, hướng đi cá nhân hoặc những điều bạn đang cảm thấy chưa thể gọi tên rõ ràng.",
+      "tagline": "Khi bạn đang bối rối và cần một hướng đi rõ ràng hơn.",
+      "short_description": "Một không gian để bạn nhìn rõ điều đang khiến mình băn khoăn và tìm ra hướng đi phù hợp.",
+      "description": "Bài Tarot phù hợp khi bạn đang cảm thấy bối rối, mơ hồ hoặc đứng giữa nhiều lựa chọn mà chưa biết nên đi theo hướng nào.\n\nTrải bài này không chỉ giúp bạn hiểu điều gì đang diễn ra, mà còn giúp bạn nhìn rõ nguyên nhân, cảm xúc bên trong và những hướng đi thực sự phù hợp với mình.\n\nĐây là không gian để bạn dừng lại, nhìn sâu hơn vào chính mình — thay vì tiếp tục suy nghĩ một mình mà không có câu trả lời rõ ràng.",
       "image": "/images/service-tarot.png",
 
-      "highlight_title": "Dành cho khi bạn cần nhìn sâu và rõ hơn",
+      "highlight_title": "Dành cho khi bạn cần một góc nhìn rõ ràng hơn",
       "highlights": [
-        "Đi sâu vào một vấn đề cụ thể thay vì chỉ nhìn tổng quan",
-        "Giúp bạn hiểu rõ nhiều khía cạnh và nguyên nhân liên quan",
-        "Phù hợp khi cần định hướng kỹ lưỡng và có không gian để hỏi thêm"
+        "Giúp bạn nhìn rõ điều thực sự đang khiến bạn băn khoăn",
+        "Hiểu sâu hơn về cảm xúc, tình huống và những gì đang diễn ra",
+        "Tìm ra hướng đi phù hợp với bạn ở thời điểm hiện tại"
       ],
 
       "notice_title": "Lưu ý",
@@ -24,37 +24,37 @@
 
       "pricing_highlight_title": "Càng có nhiều thời gian, bạn càng có không gian để đi sâu hơn",
       "pricing_benefits": [
-        "Giải mã chi tiết hơn nhiều khía cạnh của vấn đề",
-        "Có thể hỏi thêm trong quá trình xem",
-        "Phù hợp khi bạn cần định hướng kỹ lưỡng hơn"
+        "Hiểu rõ vấn đề ở nhiều góc nhìn hơn",
+        "Có thêm thời gian để hỏi và làm rõ điều bạn đang băn khoăn",
+        "Phù hợp khi bạn cần một hướng đi rõ ràng và chắc chắn hơn"
       ],
 
-      "selection_hint": "Chọn thời lượng dựa trên độ sâu bạn muốn đi vào vấn đề.",
-      "support_note": "Nếu bạn chưa rõ nên hỏi gì, mình sẽ giúp bạn làm rõ câu hỏi trước khi bắt đầu.",
+      "selection_hint": "Chọn thời lượng dựa trên mức độ bạn muốn đi sâu vào vấn đề.",
+      "support_note": "",
 
       "prices": [
         {
           "label": "15 phút",
-          "sub_label": "Phù hợp khi bạn có 1 vấn đề cụ thể",
+          "sub_label": "Phù hợp khi bạn có một vấn đề cụ thể cần làm rõ nhanh",
           "price": "250k"
         },
         {
           "label": "30 phút",
-          "sub_label": "Phù hợp khi bạn muốn hỏi sâu hơn",
+          "sub_label": "Dành cho khi bạn muốn hiểu sâu hơn và có thêm câu hỏi",
           "price": "450k",
           "save_label": "Tiết kiệm 50k",
           "save_note": "so với 2 lần 15 phút"
         },
         {
           "label": "45 phút",
-          "sub_label": "Đi sâu nhiều khía cạnh",
+          "sub_label": "Đi sâu nhiều khía cạnh và làm rõ toàn bộ vấn đề",
           "price": "620k",
           "save_label": "Tiết kiệm 130k",
           "save_note": "so với 3 lần 15 phút"
         },
         {
           "label": "60 phút",
-          "sub_label": "Phù hợp khi cần định hướng kỹ",
+          "sub_label": "Phù hợp khi bạn cần định hướng rõ ràng và chắc chắn hơn",
           "price": "750k",
           "save_label": "Tiết kiệm 250k",
           "save_note": "so với 4 lần 15 phút"
@@ -65,40 +65,54 @@
     {
       "id": "bai-tea-leaf",
       "name": "Bài Tea Leaf",
-      "tagline": "Phù hợp khi bạn muốn xem tổng quan giai đoạn sắp tới.",
-      "short_description": "Muốn biết tháng tới có gì đáng chú ý về công việc, tình cảm và năng lượng chung?",
-      "description": "Bài Tea Leaf phù hợp khi bạn muốn xem tổng quan những gì đang diễn ra trong một khoảng thời gian nhất định — đặc biệt là về công việc, tình cảm, tài chính hoặc các sự kiện nổi bật và dòng chảy năng lượng chung.\n\nTrải bài này giúp bạn nhìn ra bức tranh tổng thể của tháng hoặc giai đoạn sắp tới, đồng thời đi vào những điểm đáng chú ý hơn để bạn biết điều gì đang đến, điều gì nên lưu tâm và điều gì có thể chuẩn bị trước.",
+      "tagline": "Khi bạn muốn nhìn tổng quan giai đoạn sắp tới và biết điều gì đáng lưu tâm.",
+      "short_description": "Một trải bài nhẹ nhàng để bạn nhìn trước bức tranh chung của thời gian sắp tới.",
+      "description": "Bài Tea Leaf phù hợp khi bạn không nhất thiết đang có một vấn đề cụ thể, mà muốn nhìn tổng quan giai đoạn sắp tới để biết điều gì đang mở ra, điều gì cần lưu ý và điều gì nên chuẩn bị trước.\n\nTrải bài này giúp bạn có cái nhìn bao quát hơn về công việc, tình cảm, tài chính và dòng chảy năng lượng chung trong một khoảng thời gian nhất định.\n\nPhù hợp khi bạn muốn có cảm giác chủ động hơn, thay vì chỉ chờ mọi thứ xảy ra rồi mới phản ứng.",
       "image": "/images/service-tea-leaf.png",
 
-      "highlight_title": "Bạn sẽ nhìn rõ hơn về",
+      "highlight_title": "Dành cho khi bạn muốn nhìn trước một giai đoạn",
       "highlights": [
-        "Tổng quan công việc, tình cảm và năng lượng chung",
-        "Những sự kiện hoặc chuyển động đáng chú ý",
-        "Các chi tiết cần lưu tâm để bạn chủ động hơn"
+        "Nhìn tổng quan công việc, tình cảm và năng lượng chung sắp tới",
+        "Nhận ra những chuyển động hoặc điểm đáng chú ý trước khi chúng đến gần",
+        "Giúp bạn chuẩn bị tinh thần và chủ động hơn trong thời gian tới"
+      ],
+
+      "notice_title": "Lưu ý",
+      "notices": [
+        "Tea Leaf phù hợp khi bạn muốn xem tổng quan một khoảng thời gian thay vì đi quá sâu vào một vấn đề đơn lẻ.",
+        "Trải bài này phù hợp để nhìn dòng chảy chung, những dấu hiệu nổi bật và điều nên lưu tâm trước mắt.",
+        "Nếu bạn đang cần đào sâu vào một khúc mắc cụ thể, Bài Tarot sẽ phù hợp hơn."
+      ],
+
+      "pricing_highlight_title": "Chọn mốc thời gian bạn muốn nhìn trước",
+      "pricing_benefits": [
+        "Càng dài hạn, bạn càng thấy rõ bức tranh tổng thể",
+        "Giúp bạn nhận ra sớm những thay đổi đáng chú ý",
+        "Phù hợp khi bạn muốn chuẩn bị trước cho giai đoạn sắp tới"
       ],
 
       "selection_hint": "Chọn mốc thời gian bạn muốn nhìn tổng quan.",
-      "support_note": "Phù hợp nếu bạn muốn một trải nghiệm nhẹ nhàng nhưng vẫn có chiều sâu.",
+      "support_note": "Phù hợp khi bạn muốn một trải nghiệm nhẹ nhàng nhưng vẫn đủ rõ để định hướng.",
 
       "prices": [
         {
           "label": "Theo tuần",
-          "sub_label": "Nhìn nhanh năng lượng gần",
+          "sub_label": "Nhìn nhanh năng lượng gần và điều cần lưu ý trước mắt",
           "price": "79k"
         },
         {
           "label": "3 tháng",
-          "sub_label": "Giai đoạn ngắn hạn",
+          "sub_label": "Phù hợp khi bạn muốn nhìn một giai đoạn ngắn sắp tới",
           "price": "369k"
         },
         {
           "label": "6 tháng",
-          "sub_label": "Giai đoạn trung hạn",
+          "sub_label": "Dành cho khi bạn muốn góc nhìn rộng và rõ hơn",
           "price": "669k"
         },
         {
           "label": "12 tháng",
-          "sub_label": "Tổng quan dài hạn",
+          "sub_label": "Tổng quan dài hạn cho một chặng đường lớn hơn phía trước",
           "price": "1,088k"
         }
       ]
@@ -107,30 +121,44 @@
     {
       "id": "bai-lenormand",
       "name": "Bài Lenormand",
-      "tagline": "Phù hợp khi bạn muốn góc nhìn thực tế và rõ tín hiệu hơn.",
-      "short_description": "Muốn biết giai đoạn sắp tới có gì cần lưu ý về vận hạn, công việc và các tình huống thực tế?",
-      "description": "Bài Lenormand phù hợp khi bạn muốn nhìn rõ những gì có thể xảy ra trong một khoảng thời gian cụ thể — theo cách trực tiếp, thực tế và dễ hiểu.\n\nTrải bài này tập trung vào các sự kiện, tình huống và diễn biến có khả năng xuất hiện trong công việc, tài chính, mối quan hệ hoặc những thay đổi trong cuộc sống.",
+      "tagline": "Khi bạn cần một góc nhìn thực tế, rõ tín hiệu và dễ áp dụng hơn.",
+      "short_description": "Một trải bài dành cho khi bạn muốn biết điều gì có khả năng xảy ra và nên chuẩn bị thế nào.",
+      "description": "Bài Lenormand phù hợp khi bạn muốn nhìn sự việc theo hướng trực tiếp, thực tế và dễ nắm bắt hơn.\n\nTrải bài này tập trung vào những tín hiệu, diễn biến và tình huống có khả năng xuất hiện trong một giai đoạn cụ thể — đặc biệt là trong công việc, tài chính, mối quan hệ hoặc các thay đổi đang đến gần.\n\nPhù hợp khi bạn không chỉ muốn hiểu cảm xúc, mà còn muốn biết mình nên lưu ý điều gì và phản ứng thế nào cho hợp lý.",
       "image": "/images/service-lenormand.png",
 
-      "highlight_title": "Bạn sẽ nhìn rõ hơn về",
+      "highlight_title": "Dành cho khi bạn cần một góc nhìn thực tế hơn",
       "highlights": [
-        "Những giai đoạn dễ biến động hoặc cần lưu ý",
-        "Các tình huống có khả năng xảy ra",
-        "Cách chuẩn bị và phản ứng thực tế hơn"
+        "Nhìn rõ những tín hiệu hoặc tình huống có khả năng xảy ra",
+        "Biết điều gì cần lưu ý để không bị động khi mọi thứ thay đổi",
+        "Giúp bạn phản ứng thực tế và vững hơn trước một giai đoạn mới"
       ],
 
-      "selection_hint": "Chọn theo giai đoạn bạn muốn xem vận hạn.",
-      "support_note": "Phù hợp khi bạn muốn thông tin rõ ràng, trực tiếp và dễ áp dụng.",
+      "notice_title": "Lưu ý",
+      "notices": [
+        "Lenormand phù hợp khi bạn muốn nhìn sự việc theo hướng trực tiếp, rõ tín hiệu và dễ áp dụng hơn.",
+        "Trải bài này tập trung nhiều vào diễn biến, tình huống và điều có thể xảy ra trong thực tế.",
+        "Nếu bạn đang cần đào sâu cảm xúc hoặc một khúc mắc cá nhân cụ thể, Bài Tarot có thể phù hợp hơn."
+      ],
+
+      "pricing_highlight_title": "Chọn giai đoạn bạn muốn nhìn rõ hơn",
+      "pricing_benefits": [
+        "Giúp bạn nhận ra sớm những giai đoạn cần lưu ý",
+        "Cho bạn góc nhìn thực tế hơn về điều đang đến",
+        "Phù hợp khi bạn muốn chuẩn bị trước thay vì bị động"
+      ],
+
+      "selection_hint": "Chọn theo giai đoạn bạn muốn xem rõ tín hiệu và vận động sắp tới.",
+      "support_note": "Phù hợp khi bạn muốn thông tin rõ ràng, trực tiếp và dễ áp dụng vào thực tế.",
 
       "prices": [
         {
           "label": "3 tháng vận hạn",
-          "sub_label": "Ngắn hạn, tập trung",
+          "sub_label": "Ngắn hạn, tập trung, phù hợp khi bạn muốn nhìn rõ giai đoạn gần",
           "price": "388k"
         },
         {
           "label": "6 tháng vận hạn",
-          "sub_label": "Nhìn rộng hơn",
+          "sub_label": "Dành cho khi bạn muốn nhìn rộng hơn và chuẩn bị kỹ hơn",
           "price": "688k"
         }
       ]
