@@ -82,10 +82,10 @@ export default function ServiceSectionDetails({
       />
 
       <div
-        className={`absolute inset-0 will-change-transform [transform:translate3d(0,0,0)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          isOpen ? "translate-y-0" : "translate-y-full"
-        }`}
-      >
+  className={`absolute inset-0 transform-gpu will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+    isOpen ? "translate-y-0" : "translate-y-full"
+  }`}
+>
         <div
           className={`h-full overflow-hidden ${
             isTarot
