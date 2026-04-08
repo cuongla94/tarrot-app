@@ -258,8 +258,10 @@ export default function ServiceSectionDetails({
                     <span className={`text-[20px] leading-none ${dividerMoonColor}`}>
                       ◑
                     </span>
-                    <span className={`text-[20px] leading-none ${dividerMoonColor}`}>
-                      ☽
+                    <span
+                      className={`text-[20px] leading-none ${dividerMoonColor} rotate-180`}
+                    >
+                      ☾
                     </span>
                   </div>
 
