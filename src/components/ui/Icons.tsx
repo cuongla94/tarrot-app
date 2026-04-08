@@ -26,9 +26,9 @@ export function MessengerIcon({ className }: IconProps) {
     <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
       <defs>
         <linearGradient id="messengerFlat" x1="8" y1="8" x2="40" y2="40">
-          <stop offset="0%" stopColor="#1ec8ff" />
-          <stop offset="50%" stopColor="#5b5cff" />
-          <stop offset="100%" stopColor="#ff4db8" />
+          <stop offset="0%" stopColor="#35C2FF" />
+          <stop offset="52%" stopColor="#4F7CFF" />
+          <stop offset="100%" stopColor="#7C5CFF" />
         </linearGradient>
       </defs>
 
@@ -47,9 +47,13 @@ export function MessengerIcon({ className }: IconProps) {
 
 export function BookingIcon({ className }: IconProps) {
   return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none">
+    <svg
+      viewBox="0 0 24 24"
+      className={className}
+      aria-hidden="true"
+      fill="none"
+    >
       <g transform="translate(0, 1)">
-        {/* outer calendar */}
         <rect
           x="3"
           y="5"
@@ -60,7 +64,6 @@ export function BookingIcon({ className }: IconProps) {
           strokeWidth="2"
         />
 
-        {/* top rings */}
         <path
           d="M8 3V6"
           stroke="#FFFFFF"
@@ -74,7 +77,6 @@ export function BookingIcon({ className }: IconProps) {
           strokeLinecap="round"
         />
 
-        {/* divider */}
         <path
           d="M3 9H21"
           stroke="#FFFFFF"
@@ -82,6 +84,26 @@ export function BookingIcon({ className }: IconProps) {
           strokeLinecap="round"
         />
       </g>
+    </svg>
+  );
+}
+
+export function InstagramIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
+      <defs>
+        <linearGradient id="igGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#F58529" />
+          <stop offset="30%" stopColor="#DD2A7B" />
+          <stop offset="60%" stopColor="#8134AF" />
+          <stop offset="100%" stopColor="#515BD4" />
+        </linearGradient>
+      </defs>
+
+      <rect x="6" y="6" width="36" height="36" rx="10" fill="url(#igGradient)" />
+
+      <circle cx="24" cy="24" r="8" fill="none" stroke="white" strokeWidth="3" />
+      <circle cx="33.5" cy="14.5" r="2.2" fill="white" />
     </svg>
   );
 }

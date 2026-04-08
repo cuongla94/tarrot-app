@@ -2,26 +2,24 @@
   --bg: #fcfaf7;
   --surface: #fffdf9;
   --card: #ffffff;
-  --text: #2f2238;
-  --muted: #7f718b;
 
-  --primary: #2f2238;
+  /* keep these as optional design tokens, but don't force them globally */
+  --muted: #b7a9c6;
+
   --primary-soft: #f2edf6;
   --accent: #caa46a;
   --accent-soft: #f8efdf;
 
-  --border: #e9e0ec;
+  --border: rgba(255, 255, 255, 0.14);
   --success: #2f9e6f;
   --danger: #d95c5c;
-
-  --heading: #2b1d35;
 
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
 
-  --shadow-card: 0 10px 30px rgba(47, 34, 56, 0.06);
-  --shadow-soft: 0 6px 16px rgba(47, 34, 56, 0.05);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.16);
+  --shadow-soft: 0 6px 16px rgba(0, 0, 0, 0.12);
 
   --font-body:
     "Inter",

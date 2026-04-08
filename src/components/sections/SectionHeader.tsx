@@ -7,16 +7,18 @@ export function SectionHeader({
   subtitle?: string;
 }) {
   return (
-    <div className="mb-6 px-1">
-      <h2 className="mt-1 text-xl font-semibold text-[#2b2233]">
+    <div className="mb-8 px-1">
+      <h2 className="text-[26px] leading-[1.1] font-[var(--font-heading)] tracking-[-0.01em] text-[#7E7090]">
         {title}
       </h2>
 
       {subtitle && (
-        <p className="mt-1 text-sm text-[#6b5e7a]">
+        <p className="mt-2 text-[13px] leading-7 text-[#7B6D87]">
           {subtitle}
         </p>
       )}
+
+      <div className="mt-6 h-px w-full bg-[#E7DFF0]" />
     </div>
   );
 }

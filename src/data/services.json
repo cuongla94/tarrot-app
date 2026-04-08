@@ -1,22 +1,139 @@
 {
   "services": [
     {
-      "name": "Bài Tuần",
-      "short_description": "Thông điệp và năng lượng nổi bật trong tuần này.",
-      "description": "",
-      "image": "/images/service-week.jpg"
+      "id": "bai-tarot",
+      "name": "Bài Tarot",
+      "tagline": "Phù hợp khi bạn cần nhìn sâu vào một vấn đề cụ thể.",
+      "short_description": "Khi bạn cần đi sâu vào một vấn đề và tìm ra hướng nhìn rõ ràng hơn.",
+      "description": "Bài Tarot phù hợp khi bạn đang có một vấn đề, một khúc mắc hoặc một lựa chọn cần được nhìn sâu hơn. Trải bài này không chỉ dừng ở việc xem điều gì đang diễn ra, mà còn giúp bạn hiểu rõ nguyên nhân, các khía cạnh liên quan và hướng đi phù hợp hơn với mình.\n\nPhù hợp cho những câu hỏi về công việc, tình cảm, các mối quan hệ, hướng đi cá nhân hoặc những điều bạn đang cảm thấy chưa thể gọi tên rõ ràng.",
+      "image": "/images/service-tarot.png",
+
+      "highlight_title": "Dành cho khi bạn cần nhìn sâu và rõ hơn",
+      "highlights": [
+        "Đi sâu vào một vấn đề cụ thể thay vì chỉ nhìn tổng quan",
+        "Giúp bạn hiểu rõ nhiều khía cạnh và nguyên nhân liên quan",
+        "Phù hợp khi cần định hướng kỹ lưỡng và có không gian để hỏi thêm"
+      ],
+
+      "notice_title": "Lưu ý",
+      "notices": [
+        "Tarot phù hợp để nhìn sâu hơn về công việc, tình cảm, mối quan hệ và những lựa chọn bạn đang đối diện.",
+        "Trải bài này không thay thế cho lời khuyên y khoa, pháp lý hoặc các quyết định chuyên môn quan trọng.",
+        "Mình không nhận xem những nội dung liên quan đến sinh tử, bệnh tật nghiêm trọng, phần âm hoặc các vấn đề mang tính tạo nghiệp."
+      ],
+
+      "pricing_highlight_title": "Càng có nhiều thời gian, bạn càng có không gian để đi sâu hơn",
+      "pricing_benefits": [
+        "Giải mã chi tiết hơn nhiều khía cạnh của vấn đề",
+        "Có thể hỏi thêm trong quá trình xem",
+        "Phù hợp khi bạn cần định hướng kỹ lưỡng hơn"
+      ],
+
+      "selection_hint": "Chọn thời lượng dựa trên độ sâu bạn muốn đi vào vấn đề.",
+      "support_note": "Nếu bạn chưa rõ nên hỏi gì, mình sẽ giúp bạn làm rõ câu hỏi trước khi bắt đầu.",
+
+      "prices": [
+        {
+          "label": "15 phút",
+          "sub_label": "Phù hợp khi bạn có 1 vấn đề cụ thể",
+          "price": "250k"
+        },
+        {
+          "label": "30 phút",
+          "sub_label": "Phù hợp khi bạn muốn hỏi sâu hơn",
+          "price": "450k",
+          "save_label": "Tiết kiệm 50k",
+          "save_note": "so với 2 lần 15 phút"
+        },
+        {
+          "label": "45 phút",
+          "sub_label": "Đi sâu nhiều khía cạnh",
+          "price": "620k",
+          "save_label": "Tiết kiệm 130k",
+          "save_note": "so với 3 lần 15 phút"
+        },
+        {
+          "label": "60 phút",
+          "sub_label": "Phù hợp khi cần định hướng kỹ",
+          "price": "750k",
+          "save_label": "Tiết kiệm 250k",
+          "save_note": "so với 4 lần 15 phút"
+        }
+      ]
     },
+
     {
-      "name": "Bài Tháng",
-      "short_description": "Góc nhìn tổng quan về hành trình và cơ hội trong tháng.",
-      "description": "",
-      "image": "/images/service-month.jpg"
+      "id": "bai-tea-leaf",
+      "name": "Bài Tea Leaf",
+      "tagline": "Phù hợp khi bạn muốn xem tổng quan giai đoạn sắp tới.",
+      "short_description": "Muốn biết tháng tới có gì đáng chú ý về công việc, tình cảm và năng lượng chung?",
+      "description": "Bài Tea Leaf phù hợp khi bạn muốn xem tổng quan những gì đang diễn ra trong một khoảng thời gian nhất định — đặc biệt là về công việc, tình cảm, tài chính hoặc các sự kiện nổi bật và dòng chảy năng lượng chung.\n\nTrải bài này giúp bạn nhìn ra bức tranh tổng thể của tháng hoặc giai đoạn sắp tới, đồng thời đi vào những điểm đáng chú ý hơn để bạn biết điều gì đang đến, điều gì nên lưu tâm và điều gì có thể chuẩn bị trước.",
+      "image": "/images/service-tea-leaf.png",
+
+      "highlight_title": "Bạn sẽ nhìn rõ hơn về",
+      "highlights": [
+        "Tổng quan công việc, tình cảm và năng lượng chung",
+        "Những sự kiện hoặc chuyển động đáng chú ý",
+        "Các chi tiết cần lưu tâm để bạn chủ động hơn"
+      ],
+
+      "selection_hint": "Chọn mốc thời gian bạn muốn nhìn tổng quan.",
+      "support_note": "Phù hợp nếu bạn muốn một trải nghiệm nhẹ nhàng nhưng vẫn có chiều sâu.",
+
+      "prices": [
+        {
+          "label": "Theo tuần",
+          "sub_label": "Nhìn nhanh năng lượng gần",
+          "price": "79k"
+        },
+        {
+          "label": "3 tháng",
+          "sub_label": "Giai đoạn ngắn hạn",
+          "price": "369k"
+        },
+        {
+          "label": "6 tháng",
+          "sub_label": "Giai đoạn trung hạn",
+          "price": "669k"
+        },
+        {
+          "label": "12 tháng",
+          "sub_label": "Tổng quan dài hạn",
+          "price": "1,088k"
+        }
+      ]
     },
+
     {
-      "name": "Bài trà",
-      "short_description": "Trải bài nhẹ nhàng, thư giãn, phù hợp khi cần định hướng nhanh.",
-      "description": "",
-      "image": "/images/service-tea.jpg"
+      "id": "bai-lenormand",
+      "name": "Bài Lenormand",
+      "tagline": "Phù hợp khi bạn muốn góc nhìn thực tế và rõ tín hiệu hơn.",
+      "short_description": "Muốn biết giai đoạn sắp tới có gì cần lưu ý về vận hạn, công việc và các tình huống thực tế?",
+      "description": "Bài Lenormand phù hợp khi bạn muốn nhìn rõ những gì có thể xảy ra trong một khoảng thời gian cụ thể — theo cách trực tiếp, thực tế và dễ hiểu.\n\nTrải bài này tập trung vào các sự kiện, tình huống và diễn biến có khả năng xuất hiện trong công việc, tài chính, mối quan hệ hoặc những thay đổi trong cuộc sống.",
+      "image": "/images/service-lenormand.png",
+
+      "highlight_title": "Bạn sẽ nhìn rõ hơn về",
+      "highlights": [
+        "Những giai đoạn dễ biến động hoặc cần lưu ý",
+        "Các tình huống có khả năng xảy ra",
+        "Cách chuẩn bị và phản ứng thực tế hơn"
+      ],
+
+      "selection_hint": "Chọn theo giai đoạn bạn muốn xem vận hạn.",
+      "support_note": "Phù hợp khi bạn muốn thông tin rõ ràng, trực tiếp và dễ áp dụng.",
+
+      "prices": [
+        {
+          "label": "3 tháng vận hạn",
+          "sub_label": "Ngắn hạn, tập trung",
+          "price": "388k"
+        },
+        {
+          "label": "6 tháng vận hạn",
+          "sub_label": "Nhìn rộng hơn",
+          "price": "688k"
+        }
+      ]
     }
   ]
 }

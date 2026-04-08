@@ -1,8 +1,31 @@
+export type ServicePrice = {
+  label: string;
+  sub_label?: string;
+  price: string;
+  save_label?: string;
+  save_note?: string;
+};
+
 export type Service = {
+  id: string;
   name: string;
   short_description: string;
   description: string;
   image: string;
+
+  highlight_title: string;
+  highlights: string[];
+
+  notice_title?: string;
+  notices?: string[];
+  support_note?: string
+  selection_hint?: string
+  tagline?: string
+  pricing_highlight_title?: string;
+  pricing_benefits?: string[];
+  pricing_note?: string;
+
+  prices: ServicePrice[];
 };
 
 export type ServicesData = {
@@ -10,7 +33,7 @@ export type ServicesData = {
 };
 
 export type FloatingActionItem = {
-  type: "zalo" | "messenger" | "booking";
+  type: "zalo" | "messenger" | "booking" | "instagram";
   label: string;
   href?: string;
   target?: string;
