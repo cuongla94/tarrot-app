@@ -22,7 +22,7 @@ export default function MainLayout({ children }: Props) {
         <div className="absolute left-[50%] top-[85%] text-[5px] text-[#B28A53]/30">✦</div>
       </div>
 
-      <div className="relative mx-auto max-w-md px-4 pb-36">
+      <div className="relative mx-auto max-w-md px-4">
         <HeaderBar />
         {children}
       </div>
