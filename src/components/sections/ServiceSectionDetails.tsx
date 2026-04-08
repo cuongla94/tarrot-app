@@ -68,7 +68,7 @@ export default function ServiceSectionDetails({
 
   return (
     <div
-      className={`fixed inset-0 z-[70] overflow-hidden transition-opacity duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`fixed inset-0 z-[70] overflow-hidden transition-opacity duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         isOpen
           ? "pointer-events-auto opacity-100"
           : "pointer-events-none opacity-0"
@@ -76,13 +76,13 @@ export default function ServiceSectionDetails({
     >
       <div
         onClick={onClose}
-        className={`absolute inset-0 bg-black/20 backdrop-blur-[2px] transition-opacity duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+        className={`absolute inset-0 bg-black/20 backdrop-blur-[2px] transition-opacity duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
           isOpen ? "opacity-100" : "opacity-0"
         }`}
       />
 
       <div
-  className={`absolute inset-0 transform-gpu will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+  className={`absolute inset-0 transform-gpu will-change-transform transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
     isOpen ? "translate-y-0" : "translate-y-full"
   }`}
 >
