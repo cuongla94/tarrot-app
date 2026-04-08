@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { Service } from "@/types";
 import { CircleAlert, Sparkles } from "lucide-react";
 
@@ -13,6 +13,19 @@ export default function ServiceSectionDetails({
   isOpen,
   onClose,
 }: Props) {
+  const [activeService, setActiveService] = useState<Service | null>(service);
+
+  useEffect(() => {
+    if (service) setActiveService(service);
+  }, [service]);
+
+  useEffect(() => {
+    if (!isOpen && activeService) {
+      const timer = setTimeout(() => setActiveService(null), 500);
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen, activeService]);
+
   useEffect(() => {
     if (!isOpen) return;
 
@@ -24,10 +37,10 @@ export default function ServiceSectionDetails({
     };
   }, [isOpen]);
 
-  if (!service) return null;
+  if (!activeService) return null;
 
-  const isTarot = service.id === "bai-tarot";
-  const isLenormand = service.id === "bai-lenormand";
+  const isTarot = activeService.id === "bai-tarot";
+  const isLenormand = activeService.id === "bai-lenormand";
 
   const baseTextClass = isTarot
     ? "text-[#d8c7e5]"
@@ -68,11 +81,11 @@ export default function ServiceSectionDetails({
         }`}
       />
 
-     <div
-  className={`absolute inset-0 will-change-transform [transform:translate3d(0,0,0)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-    isOpen ? "translate-y-0" : "translate-y-full"
-  }`}
->
+      <div
+        className={`absolute inset-0 will-change-transform [transform:translate3d(0,0,0)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          isOpen ? "translate-y-0" : "translate-y-full"
+        }`}
+      >
         <div
           className={`h-full overflow-hidden ${
             isTarot
@@ -85,22 +98,22 @@ export default function ServiceSectionDetails({
           <div className="pointer-events-none absolute inset-0">
             {isTarot ? (
               <>
-                <div className="absolute inset-x-0 top-0 h-36 bg-linear-to-b from-black/20 to-transparent" />
-                <div className="absolute -top-10 left-[-10%] h-64 w-64 rounded-full bg-[#6e3fd4]/20 blur-2xl" />
-                <div className="absolute right-[-8%] top-24 h-72 w-72 rounded-full bg-[#c48a3c]/12 blur-2xl" />
-                <div className="absolute bottom-20 left-[15%] h-56 w-56 rounded-full bg-[#7b46ff]/10 blur-2xl" />
+                <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-black/20 to-transparent" />
+                <div className="absolute -top-10 left-[-10%] h-64 w-64 rounded-full bg-[#6e3fd4]/20 blur-3xl" />
+                <div className="absolute right-[-8%] top-24 h-72 w-72 rounded-full bg-[#c48a3c]/12 blur-3xl" />
+                <div className="absolute bottom-20 left-[15%] h-56 w-56 rounded-full bg-[#7b46ff]/10 blur-3xl" />
               </>
             ) : isLenormand ? (
               <>
-                <div className="absolute -top-16 left-[-12%] h-60 w-60 rounded-full bg-[#cfd8ee]/50 blur-2xl" />
-                <div className="absolute right-[-10%] top-20 h-72 w-72 rounded-full bg-[#f3f6ff]/70 blur-2xl" />
-                <div className="absolute bottom-10 left-[10%] h-56 w-56 rounded-full bg-[#d9d2e9]/35 blur-2xl" />
+                <div className="absolute -top-16 left-[-12%] h-60 w-60 rounded-full bg-[#cfd8ee]/50 blur-3xl" />
+                <div className="absolute right-[-10%] top-20 h-72 w-72 rounded-full bg-[#f3f6ff]/70 blur-3xl" />
+                <div className="absolute bottom-10 left-[10%] h-56 w-56 rounded-full bg-[#d9d2e9]/35 blur-3xl" />
               </>
             ) : (
               <>
-                <div className="absolute -top-16 left-[-20%] h-56 w-56 rounded-full bg-[#d7c2ff]/35 blur-2xl" />
-                <div className="absolute right-[-10%] top-32 h-64 w-64 rounded-full bg-[#f3d6b3]/25 blur-2xl" />
-                <div className="absolute bottom-10 left-[-10%] h-52 w-52 rounded-full bg-[#c7b3ff]/20 blur-2xl" />
+                <div className="absolute -top-16 left-[-20%] h-56 w-56 rounded-full bg-[#d7c2ff]/35 blur-3xl" />
+                <div className="absolute right-[-10%] top-32 h-64 w-64 rounded-full bg-[#f3d6b3]/25 blur-3xl" />
+                <div className="absolute bottom-10 left-[-10%] h-52 w-52 rounded-full bg-[#c7b3ff]/20 blur-3xl" />
               </>
             )}
           </div>
@@ -117,7 +130,7 @@ export default function ServiceSectionDetails({
                         : "text-[#2b1834]"
                   }`}
                 >
-                  {service.name}
+                  {activeService.name}
                 </h3>
               </div>
 
@@ -146,7 +159,7 @@ export default function ServiceSectionDetails({
                     : "border-[#2b1834]/35 bg-white/55"
               }`}
             >
-              {service.description && (
+              {activeService.description && (
                 <p
                   className={`text-[15px] leading-8 ${
                     isTarot
@@ -156,12 +169,12 @@ export default function ServiceSectionDetails({
                         : "text-[#4b3958]"
                   }`}
                 >
-                  {service.description}
+                  {activeService.description}
                 </p>
               )}
             </div>
 
-            {service.highlight_title && service.highlights?.length ? (
+            {activeService.highlight_title && activeService.highlights?.length ? (
               <div
                 className={`mt-8 overflow-hidden rounded-[30px] border p-7 shadow-[0_16px_40px_rgba(43,24,52,0.07)] ${sectionCardClass}`}
               >
@@ -173,12 +186,12 @@ export default function ServiceSectionDetails({
                   <p
                     className={`text-[19px] font-semibold leading-7 ${titleTextClass}`}
                   >
-                    {service.highlight_title}
+                    {activeService.highlight_title}
                   </p>
                 </div>
 
                 <ul className="mt-5 space-y-4">
-                  {service.highlights.map((item: string) => (
+                  {activeService.highlights.map((item: string) => (
                     <li
                       key={item}
                       className={`flex gap-3 text-[15px] leading-8 ${baseTextClass}`}
@@ -195,7 +208,7 @@ export default function ServiceSectionDetails({
               </div>
             ) : null}
 
-            {service.notice_title && service.notices?.length ? (
+            {activeService.notice_title && activeService.notices?.length ? (
               <div
                 className={`mt-8 overflow-hidden rounded-[30px] border p-7 shadow-[0_16px_40px_rgba(43,24,52,0.07)] ${sectionCardClass}`}
               >
@@ -207,12 +220,12 @@ export default function ServiceSectionDetails({
                   <p
                     className={`text-[19px] font-semibold leading-7 ${titleTextClass}`}
                   >
-                    {service.notice_title}
+                    {activeService.notice_title}
                   </p>
                 </div>
 
                 <ul className="mt-5 space-y-4">
-                  {service.notices.map((item: string) => (
+                  {activeService.notices.map((item: string) => (
                     <li
                       key={item}
                       className={`flex gap-3 text-[15px] leading-8 ${baseTextClass}`}
@@ -229,7 +242,7 @@ export default function ServiceSectionDetails({
               </div>
             ) : null}
 
-            {service.prices?.length > 0 && (
+            {activeService.prices?.length > 0 && (
               <div className="mt-8">
                 <p
                   className={`text-[11px] uppercase tracking-[0.28em] ${
@@ -255,15 +268,15 @@ export default function ServiceSectionDetails({
                   Chọn gói phù hợp với bạn
                 </h4>
 
-                {isTarot && service.pricing_highlight_title ? (
+                {isTarot && activeService.pricing_highlight_title ? (
                   <div className="mt-5 overflow-hidden rounded-[28px] border border-[#f3e7cf]/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-5">
                     <p className="text-[16px] font-semibold leading-7 text-[#f3e7cf]">
-                      {service.pricing_highlight_title}
+                      {activeService.pricing_highlight_title}
                     </p>
 
-                    {service.pricing_benefits?.length ? (
+                    {activeService.pricing_benefits?.length ? (
                       <ul className="mt-4 space-y-3">
-                        {service.pricing_benefits.map((item: string) => (
+                        {activeService.pricing_benefits.map((item: string) => (
                           <li
                             key={item}
                             className="flex gap-3 text-[14px] leading-7 text-[#d8c7e5]"
@@ -279,7 +292,7 @@ export default function ServiceSectionDetails({
                   </div>
                 ) : null}
 
-                {service.selection_hint && (
+                {activeService.selection_hint && (
                   <p
                     className={`mt-4 text-[13px] leading-6 ${
                       isTarot
@@ -289,12 +302,12 @@ export default function ServiceSectionDetails({
                           : "text-[#7b6d87]"
                     }`}
                   >
-                    {service.selection_hint}
+                    {activeService.selection_hint}
                   </p>
                 )}
 
                 <div className="mt-5 space-y-4">
-                  {service.prices.map((item: any, index: number) => (
+                  {activeService.prices.map((item: any, index: number) => (
                     <div
                       key={`${item.label}-${item.price}`}
                       className={`rounded-[26px] border px-5 py-4 shadow-[0_10px_24px_rgba(43,24,52,0.05)] ${
@@ -370,7 +383,7 @@ export default function ServiceSectionDetails({
                   ))}
                 </div>
 
-                {service.support_note && (
+                {activeService.support_note && (
                   <p
                     className={`mt-4 text-[13px] leading-6 ${
                       isTarot
@@ -380,11 +393,11 @@ export default function ServiceSectionDetails({
                           : "text-[#7b6d87]"
                     }`}
                   >
-                    {service.support_note}
+                    {activeService.support_note}
                   </p>
                 )}
 
-                {!service.support_note && service.pricing_note && (
+                {!activeService.support_note && activeService.pricing_note && (
                   <p
                     className={`mt-4 text-[13px] leading-6 ${
                       isTarot
@@ -394,7 +407,7 @@ export default function ServiceSectionDetails({
                           : "text-[#7b6d87]"
                     }`}
                   >
-                    {service.pricing_note}
+                    {activeService.pricing_note}
                   </p>
                 )}
               </div>
